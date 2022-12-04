@@ -1,0 +1,3 @@
+﻿  TSP.cpp
+C:\Users\Bartłomiej\Desktop\TSP\TSP.cpp(65): warning C4715: "TSP”: niewszystkie ścieżki kodu zwracają wartość
+  TSP.vcxproj -> C:\Users\Bartłomiej\Desktop\TSP\x64\Debug\TSP.exe
