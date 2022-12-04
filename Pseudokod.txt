@@ -1,0 +1,26 @@
+wywołanie funkcji wyświetlającej graph
+wyświetl "ścieżka:" i wywołaj funkcję TSP
+	int NastepneMiasto
+	UkonczoneMiasta[Miasto] = 1
+	wyświetl Miasto -->
+	NastepneMiasto = Cykl(Miasto)
+		int NM = 24
+		int ObecnaTrasa
+		int NajkrotszaTrasa = INT16_MAX
+		jeżeli odległość jest różna od 0 oraz miasto nie zostało już odwiedzone
+			czy trasa graph[cykl][KolejneMiasto] < Najkrótszej trasy
+				NajkrotszaTrasa = graph[cykl][KolejneMiasto]
+				ObecnaTrasa = graph[cykl][KolejneMiasto]
+				NM = KolejneMiasto;
+		jeżeli NajkrotszaTrasa != INT16_MAX
+			Trasa += ObecnaTrasa
+		zwróć NM
+	jeżeli NastepneMiasto == 24
+		NastepneMiasto = 0
+		Wyświetl NastepneMiasto
+		Trasa += graph[Miasto][NastepneMiasto]
+		zwróć 0
+	wywołaj funkcję TSP(NastepneMiasto)
+	....
+wyświetl "Najkrótsza Trasa:" Trasa;
+zwróć 0
